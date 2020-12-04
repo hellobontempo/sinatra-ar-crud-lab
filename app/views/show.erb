@@ -1,0 +1,15 @@
+<!--show individal article-->
+<!DOCTYPE html>
+<html>
+<h1> I AM AN INDIVIDUAL ARTICLE </h1>
+<h6> look at meeeee </h6>
+
+<h2><%=@article.title%></h2><br>
+<p><%=@article.content%></p>
+
+
+<form method="post" action="/articles/<%=@article.id%>">
+<input id="hidden" type="hidden" name="_method" value="delete"> 
+<input type="submit" value="delete">
+
+</html>
