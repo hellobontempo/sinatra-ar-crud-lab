@@ -1,0 +1,10 @@
+<!--show all of the articles-->
+<!DOCTYPE html>
+<html>
+<h1>ALL THE ARTICLES</h1>
+
+<%@articles.each do |article|%>
+    <%= "#{article.id} - #{article.title}"%><br>
+<%end%>
+
+</html>
